@@ -14,7 +14,9 @@ function abbrevName(name){
     var str = name;
     var stringArray = str.split(/(\s+)/);
     var a = Array.from(stringArray [0])[0];
+    a = a.toUpperCase();
     var b = Array.from(stringArray [2])[0];
-    var x = a + '.' + b;
+    b = b.toUpperCase();
+    var x = a +'.' + b;
     return x;
 }
